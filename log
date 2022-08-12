@@ -20,3 +20,19 @@ Fri 12 Aug 2022 01:11:16 PM UTC:
  tests:  1|6
 total_score: 10/70
 3104215
+Fri 12 Aug 2022 01:15:37 PM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:58:11: error: ‘p’ undeclared (first use in this function)
+   58 |    strcpy(p[0].nombre, nombre);
+      |           ^
+exercises.c:58:11: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function ‘crearVector’:
+exercises.c:80:11: error: returning ‘int *’ from a function with incompatible return type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   80 |    return v;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+9178e0a
