@@ -72,3 +72,14 @@ exercises.c:86:11: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 cdfd35b
+Fri 12 Aug 2022 01:17:52 PM UTC: 
+ exercises.c | 8 +-------
+ 1 file changed, 1 insertion(+), 7 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:58:11: error: ‘p’ undeclared (first use in this function)
+   58 |    strcpy(p[0].nombre, nombre);
+      |           ^
+exercises.c:58:11: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+335a25e

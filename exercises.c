@@ -76,14 +76,8 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   int i;
-   int v[n];
   
-   for(i = 0; i < n; i++) {
-     v[i] = 0;
-   }
-  
-   return v;
+   return NULL;
 }
 
 /*
