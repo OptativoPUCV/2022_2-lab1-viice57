@@ -36,3 +36,22 @@ exercises.c:80:11: error: returning ‘int *’ from a function with incompatibl
 cc1: all warnings being treated as errors
 Compilation failed
 9178e0a
+Fri 12 Aug 2022 01:15:47 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:58:11: error: ‘p’ undeclared (first use in this function)
+   58 |    strcpy(p[0].nombre, nombre);
+      |           ^
+exercises.c:58:11: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function ‘crearVector’:
+exercises.c:79:12: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   79 |    int v = calloc(n, sizeof(int));
+      |            ^~~~~~
+exercises.c:80:11: error: returning ‘int’ from a function with return type ‘Vector *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   80 |    return v;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+4f14f7a
