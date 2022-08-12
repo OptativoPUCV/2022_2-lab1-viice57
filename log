@@ -55,3 +55,20 @@ exercises.c:80:11: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 4f14f7a
+Fri 12 Aug 2022 01:17:01 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:58:11: error: ‘p’ undeclared (first use in this function)
+   58 |    strcpy(p[0].nombre, nombre);
+      |           ^
+exercises.c:58:11: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function ‘crearVector’:
+exercises.c:86:11: error: returning ‘int *’ from a function with incompatible return type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   86 |    return v;
+      |           ^
+exercises.c:86:11: error: function returns address of local variable [-Werror=return-local-addr]
+cc1: all warnings being treated as errors
+Compilation failed
+cdfd35b
