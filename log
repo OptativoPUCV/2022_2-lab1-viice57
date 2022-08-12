@@ -83,3 +83,29 @@ exercises.c:58:11: error: ‘p’ undeclared (first use in this function)
 exercises.c:58:11: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 335a25e
+Fri 12 Aug 2022 01:26:06 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:58:16: error: invalid initializer
+   58 |    Persona p = malloc(1 * sizeof(int));
+      |                ^~~~~~
+exercises.c:60:12: error: subscripted value is neither array nor pointer nor vector
+   60 |    strcpy(p[0].nombre, nombre);
+      |            ^
+exercises.c:61:12: error: subscripted value is neither array nor pointer nor vector
+   61 |    strcpy(p[0].rut, rut);
+      |            ^
+exercises.c:62:5: error: subscripted value is neither array nor pointer nor vector
+   62 |    p[0].edad = edad;
+      |     ^
+exercises.c:64:11: error: invalid type argument of unary ‘*’ (have ‘Persona’)
+   64 |    return *p;
+      |           ^~
+exercises.c:65:1: error: control reaches end of non-void function [-Werror=return-type]
+   65 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d9c0520
