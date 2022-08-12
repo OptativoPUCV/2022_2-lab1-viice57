@@ -37,7 +37,7 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-  *suma = sumaN(a, m);
+  *suma = sumaN(a, );
 }
 
 /*
@@ -57,9 +57,9 @@ typedef struct {
 Persona* crearPersona(char nombre[], char rut[], int edad) {
    Persona p[1];
   
-   strcpy(p[0].nombre, "Isaias");
-   strcpy(p[0].rut, "166397294");
-   p[0].edad = 31;
+   strcpy(p[0].nombre, nombre);
+   strcpy(p[0].rut, rut);
+   p[0].edad = edad;
   
    return NULL;
 }
