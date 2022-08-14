@@ -336,3 +336,13 @@ Sun 14 Aug 2022 01:05:01 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 ff9f988
+Sun 14 Aug 2022 01:07:34 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:7: error: ‘Vector’ has no member named ‘v’
+   85 |      v->v[i].datos  = 0;
+      |       ^~
+Compilation failed
+cc3fd06
