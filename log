@@ -316,3 +316,13 @@ exercises.c:85:9: error: expected identifier before ‘(’ token
       |         ^
 Compilation failed
 3b6c8a0
+Sun 14 Aug 2022 01:04:33 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:9: error: expected identifier before ‘(’ token
+   85 |      v->(datos + i) = 0;
+      |         ^
+Compilation failed
+cbc779b
