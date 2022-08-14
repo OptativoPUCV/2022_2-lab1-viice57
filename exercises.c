@@ -85,7 +85,7 @@ Vector * crearVector(int n) {
       v->datos[i] = 0;
    }
 
-   v->capacidad = n;
+   *datos->capacidad = n;
   
    return v;
 }
