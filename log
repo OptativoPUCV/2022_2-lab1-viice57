@@ -444,3 +444,14 @@ Sun 14 Aug 2022 08:23:51 PM UTC:
  tests:  3|4
 total_score: 30/70
 dfb8e3e
+Sun 14 Aug 2022 08:24:19 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:84:13: error: assignment to ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   84 |    v->datos = (Vector*) malloc(sizeof(Vector));
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+6d3ffc4
