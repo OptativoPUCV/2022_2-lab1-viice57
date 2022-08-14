@@ -356,3 +356,13 @@ Sun 14 Aug 2022 01:09:39 AM UTC:
  1 file changed, 4 insertions(+)
  tests:  0|0
 1ea8479
+Sun 14 Aug 2022 01:17:04 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:10: error: expected identifier before ‘*’ token
+   85 |       v->*datos[i] = 0;
+      |          ^
+Compilation failed
+407ae43
