@@ -485,3 +485,37 @@ Sun 14 Aug 2022 08:32:39 PM UTC:
  tests:  4|3
 total_score: 40/70
 7544eb7
+Sun 14 Aug 2022 08:45:17 PM UTC: 
+ exercises.c | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:98:1: error: expected identifier before ‘}’ token
+   98 | }
+      | ^
+exercises.c: In function ‘sumaV’:
+exercises.c:120:11: error: invalid operands to binary + (have ‘int’ and ‘Vector’)
+  120 |     sumaA += a[i];
+      |           ^~ ~~~~
+      |               |
+      |               Vector
+exercises.c:122:17: error: invalid operands to binary != (have ‘Vector’ and ‘void *’)
+  122 |   } while (a[i] != NULL);
+      |            ~~~~ ^~
+      |             |
+      |             Vector
+exercises.c:125:11: error: invalid operands to binary + (have ‘int’ and ‘Vector’)
+  125 |     sumaB += b[j];
+      |           ^~ ~~~~
+      |               |
+      |               Vector
+exercises.c:127:17: error: invalid operands to binary != (have ‘Vector’ and ‘void *’)
+  127 |   } while (b[j] != NULL);
+      |            ~~~~ ^~
+      |             |
+      |             Vector
+exercises.c:129:9: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  129 |   * c = sumaA + sumaB;
+      |         ^~~~~
+Compilation failed
+f074723
