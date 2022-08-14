@@ -529,3 +529,16 @@ exercises.c:97:10: error: incompatible types when assigning to type ‘Vector’
       |          ^~~~~
 Compilation failed
 cf75774
+Sun 14 Aug 2022 09:31:45 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:97:3: error: aggregate value used where an integer was expected
+   97 |   (int) v[i] = valor;
+      |   ^
+exercises.c:97:14: error: lvalue required as left operand of assignment
+   97 |   (int) v[i] = valor;
+      |              ^
+Compilation failed
+2b7a9be
