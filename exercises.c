@@ -124,7 +124,8 @@ Ejercicio 8.
 Use las operaciones implementadas de vectores para 
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
-void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
-  //a1+b1
-  //a2+b2
+void sumaV2(int a1, int a2, int b1, int b2, Vector *c) {
+  //orden a+b (ejercicio 7)
+  c->datos[0] = a1 + b1;
+  c->datos[1] = a2 + b2;
 }
