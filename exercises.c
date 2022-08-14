@@ -12,7 +12,7 @@ y en c almacena el valor de la suma de a más b.
 */
 
 void suma(int a, int b, int * c) {
-    *c = a + b;
+    * c = a + b;
 }
 
 /*
@@ -37,7 +37,7 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-  *suma = sumaN(a, n) - sumaN(a, n - m);
+  * suma = sumaN(a, n) - sumaN(a, n - m);
 }
 
 /*
@@ -55,7 +55,7 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   Persona *p = (Persona*) malloc(sizeof(Persona));
+   Persona* p = (Persona*) malloc(sizeof(Persona));
   
    strcpy(p->nombre, nombre);
    strcpy(p->rut, rut);
@@ -78,10 +78,11 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   /*Vector *v = (Vector*) calloc(sizeof(n));
+   Vector * v = (Vector *) calloc(sizeof(n));
 
-   v->*datos = */ 
-   return NULL;
+   v->capacidad = n;
+  
+   return v;
 }
 
 /*
