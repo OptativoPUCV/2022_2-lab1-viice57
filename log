@@ -225,3 +225,16 @@ Sun 14 Aug 2022 12:36:04 AM UTC:
  tests:  2|5
 total_score: 20/70
 6f75d50
+Sun 14 Aug 2022 12:37:50 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:25: error: called object ‘suma’ is not a function or function pointer
+   40 |   *suma = sumaN(a, n) - suma(a, n - m);
+      |                         ^~~~
+exercises.c:39:48: note: declared here
+   39 | void sumaNultimos(int a[], int n, int m, int * suma) {
+      |                                          ~~~~~~^~~~
+Compilation failed
+e2c49e8
