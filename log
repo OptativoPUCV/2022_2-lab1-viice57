@@ -542,3 +542,20 @@ exercises.c:97:14: error: lvalue required as left operand of assignment
       |              ^
 Compilation failed
 2b7a9be
+Sun 14 Aug 2022 09:33:16 PM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:97:3: error: aggregate value used where an integer was expected
+   97 |   (int)v[i] = valor;
+      |   ^
+exercises.c:97:13: error: lvalue required as left operand of assignment
+   97 |   (int)v[i] = valor;
+      |             ^
+exercises.c: In function ‘obtenerValor’:
+exercises.c:108:11: error: incompatible types when assigning to type ‘int’ from type ‘Vector’
+  108 |   valor = v[i];
+      |           ^
+Compilation failed
+cd6bc3e
